@@ -1,0 +1,105 @@
+/* @font-face {
+    font-family: "Bangers";
+    src: url("/assets/fonts/Bangers-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Baloo";
+    src: url("/assets/fonts/Baloo2-Regular.ttf");
+}   */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Baloo";
+}
+
+@keyframes divider-slide {
+	from {
+		width: 0%;
+	}
+	to {
+		width: 70%;
+	}
+}
+
+.ship-icon {
+	width: 10vw;
+}
+
+#main-menu {
+    display: none;
+	width: 100vw;
+	height: 100vh;
+}
+
+#lobby-code-display {
+    color: white;
+}
+
+#game-container {
+    width: 900px;
+}
+
+.menu {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 10% 0 10% 0;
+    background: black;
+}
+
+.menu-option {
+	width: 70%;
+	border-top: solid 2px white;
+	text-align: center;
+	justify-content: center;
+	justify-items: center;
+	border-bottom: solid 2px white;
+	color: white;
+	overflow: auto;
+	margin: 2% 0 5% 0;
+    padding: 1vh 0 1vh 0;
+	cursor: pointer;
+}
+
+.menu-text {
+    font-family: "Bangers";
+}
+
+.title {
+    color: white;
+    font-family: "Bangers";
+    font-size: 5vw;
+}
+
+.divider {
+	width: 70%;
+	margin: 0 auto;
+	border-top: solid 2px #B29141;
+	border-bottom: solid 2px #B29141;
+	border-radius: 50vw;
+	display: none;
+}
+
+.menu-option:hover {
+	transform: rotate(1deg);
+}
+
+.menu-option:hover > .divider {
+	display: block;
+	animation: divider-slide 1s;
+}
+
+#ship-selection {
+	display: flex;
+	flex-direction: column;
+}
+
+#user-info-container {
+	border: 2px solid white;
+	width: 10vw;
+	color: white;
+	text-align: center;
+	/* margin-top: 60vh; */
+}

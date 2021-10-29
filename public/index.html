@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Escape</title>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="game-container">
+
+        <div class="menu" id="main-menu">
+            <h1 class="title">Space Escape</h1>
+            <div onclick="startGame()" class="menu-option">
+                <div class="divider"></div>
+                <h1 class="menu-text">Start New Game</h1>
+                <div class="divider"></div>  
+            </div>
+            <input id="code-input" type="text"><br>
+            <div onclick="joinGame()" class="menu-option">
+                <div class="divider"></div>
+                <h1 class="menu-text">Join Game</h1>
+                <div class="divider"></div>  
+            </div>
+
+            <div id="ship-selection">
+                <select name="ship-select" id="ship-select">
+                    <option value="Ship1">Ship 1</option>
+                    <option value="Ship2">Ship 2</option>
+                    <option value="Ship3">Ship 3</option>
+                    <option value="Ship4">Ship 4</option>
+                </select>
+                <div id="selected-ship-display"></div>
+            </div>
+
+        </div>
+        <div id="lobby-code-display"></div>
+        <div id="user-info-container">
+            <div id="health-display"></div>
+            <div id="level-display"></div>
+        </div>
+    </div>
+
+
+
+
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js" integrity="sha512-N4kV7GkNv7QR7RX9YF/olywyIgIwNvfEe2nZtfyj73HdjCUkAfOBDbcuJ/cTaN04JKRnw1YG1wnUyNKMsNgg3g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.2.0/socket.io.js" integrity="sha512-WL6WGKMPBiM9PnHRYIn5YEtq0Z8XP4fkVb4qy7PP4vhmYQErJ/dySyXuFIMDf1eEYCXCrQrMJfkNwKc9gsjTjA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script defer src="utils.js"></script>
+    <script defer src="script.js"></script>
+</body>
+
+</html>
